@@ -7,7 +7,7 @@ node {
 	stage('Test') {
 		echo "Test"
 	}
-	stage('Release') {
-		echo "Releasess"
+	stage('Integration') {
+		echo "Integration"
 	}
 }
