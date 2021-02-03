@@ -1,5 +1,3 @@
-properties([pipelineTriggers([githubPush()])])
-
 pipeline {
 
 	agent any
@@ -19,6 +17,17 @@ pipeline {
 		steps {
 			echo "Integrations"
 			}
+		}
+	}
+	post {
+		always {
+			echo "I always run"
+		}
+		success {
+			echo "I run once the build succeed"
+		}
+		failure {
+			echo "I run when the build fail"
 		}
 	}
 }
