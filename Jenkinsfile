@@ -5,14 +5,14 @@ pipeline {
 	stages {
 		stage('Build') {
 		steps {
-			sh "mvn --version"
+			sh 'mvn --version'
 			echo "Build !"
 			}
 		}
 		stage('Test') {
 		steps {
 			echo "Test !"
-			sh "ls -a" 
+			sh 'ls -a' 
 			}
 		}
 		stage('Integration') {
