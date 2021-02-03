@@ -9,8 +9,8 @@ pipeline {
 			echo "Build !"
 			echo "$PATH"
 			echo "BUILD_NUMBER"
-			echo "env.BUILD_NUMBER"
-			echo "BUILD_NUMBER - env.BUILD_NUMBER"
+			echo "$env.BUILD_NUMBER"
+			echo "BUILD_NUMBER - $env.BUILD_NUMBER"
 			}
 		}
 		stage('Test') {
