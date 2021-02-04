@@ -1,7 +1,7 @@
 pipeline {
 
-//	agent any
-    agent { docker { image 'maven:3.6.3' } }
+	agent any
+//  agent { docker { image 'maven:3.6.3' } }
 	environment {
 		mavenHome = tool 'AliAMaven'
 		dockerHome = tool 'AliADocker'
@@ -11,7 +11,7 @@ pipeline {
 		stage('Build') {
 		steps {
 			sh 'mvn --version'
-//			sh 'sudo docker version'
+			sh 'sudo docker version'
 			echo "Build !"
 			echo "$PATH"
 			echo "BUILD_NUMBER"
