@@ -21,7 +21,7 @@ pipeline {
 		}
 		stage('Test') {
 		steps {
-			echo "Test !"
+			echo "Test !!"
 //			sh 'ls -a' 
 			}
 		}
